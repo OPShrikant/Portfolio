@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Shrikant G. Potle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff7eb3, #8e44ad);
+  color: #fff;
+  margin: 0;
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navbar-nav .nav-link {
+  margin-right: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff9800;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+.hero p {
+  font-size: 1.5rem;
+}
+section {
+  padding: 60px 20px;
+}
+.info-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.info-card:hover {
+  transform: translateY(-10px);
+}
+.photo-container img {
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+.photo-container:hover img {
+  transform: scale(1.1);
+}
+.skills .info-card {
+  margin-bottom: 20px;
+}
+.project-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+.project-thumbnail:hover img {
+  transform: scale(1.05);
+}
+.social-icons a {
+  font-size: 2rem;
+  margin-right: 20px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff9800;
+}
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+  </style>
+ 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Shrikant G. Potle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-user"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills"><i class="fa fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa fa-project-diagram"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Welcome to My Portfolio</h1>
+      <p>A glimpse of my work and skills.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="photo-container">
+            <img src="Shri.png" alt="Shrikant G. Potle">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-card">
+            <p>I am an Information Technology graduate from Dr. D Y Patil Institute of Engineering and Technology with a CGPA of 7.83. I have a diploma in Computer Technology from Shri Tirupati Tantra Niketan Polytechnic, Akola, with an aggregate of 83%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container text-center">
+      <h2>Skills</h2>
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="info-card">
+            <h4>HTML</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info-card">
+            <h4>CSS</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info-card">
+            <h4>JavaScript</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info-card">
+            <h4>Bootstrap</h4>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4">
+          <div class="info-card">
+            <h4>ReactJS</h4>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4">
+          <div class="info-card">
+            <h4>C</h4>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4">
+          <div class="info-card">
+            <h4>C++</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container text-center">
+      <h2>Projects</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="project-thumbnail">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEI3bW5uTozQ4L7xsDAYk52TmYya1ogHwKhg&s" alt="Todo List">
+          </div>
+          <h5>Todo List App</h5>
+        </div>
+        <div class="col-md-6"><a href="Portfolio.html">
+          <div class="project-thumbnail">
+            <img src="https://www.nda.ac.uk/wp-content/uploads/10-10-portfolio-01.png" alt="Portfolio">
+          </div>
+          <h5>Portfolio Website</h5></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container text-center">
+      <h2>Contact Information</h2>
+      <div class="social-icons mt-4">
+        <a href="https://linkedin.com/in/shrikant-potle-b38882219" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/shrikantpotle?utm_source=qr&igsh=MWhwZ2V4bWVyYjZubA==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/9284559725" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="mt-4">Mobile: 9284559725 | Email: <a href="mailto:sgpotle@gmail.com" class="text-decoration-none text-light">sgpotle@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Shrikant G. Potle. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
